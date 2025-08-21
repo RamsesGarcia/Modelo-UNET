@@ -1,2 +1,3 @@
 # Modelo-UNET
-Segmentación de tumores cerebrales con U-Net y transferencia de aprendizaje ResNet, evaluada con IoU. Se entrena y compara contra U-Net desde cero usando un subconjunto del dataset “Brain Tumor Multi-Class Segmentation Baseline”
+
+Implementación de una U-Net para segmentación de tumores cerebrales en RM, optimizada con aprendizaje por transferencia usando ResNet como encoder y evaluada con la métrica IoU. El proyecto utiliza un subconjunto curado del dataset “Brain Tumor Multi-Class Segmentation Baseline” de Kaggle (700 imágenes; tres clases: meningioma, glioma y pituitario), con normalización y particiones de entrenamiento/validación/prueba. Los experimentos muestran convergencia más rápida con transfer learning y mejora en segmentación, aunque la ganancia está limitada por el tamaño y el “shift” del dataset. Incluye notebook de Colab para reproducibilidad.
